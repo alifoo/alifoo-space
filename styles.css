@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #FEECDE;
+  font-family: 'ZedMono Nerd Font', monospace;
+}
+
+@font-face {
+  font-family: 'ZedMono Nerd Font';
+  src: url('./fonts/ZedMonoNerdFontMono-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ZedMono Nerd Font';
+  src: url('./fonts/ZedMonoNerdFontMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ZedMono Nerd Font';
+  src: url('./fonts/ZedMonoNerdFontMono-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+#ascii-art {
+      white-space: pre; /* preserves formatting */
+      font-family: monospace;
+      padding: 1rem;
+    }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10rem;
+}
+
+.profile {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 9999px;
+}
+
+.profile-text {
+  width: 26rem;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+}
+
+.profile-text h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1C1917; /* stone-800 */
+  text-align: justify;
+}
+
+.profile-text p {
+  font-size: 16px;
+  margin: 0;
+  color: #1C1917;
+  text-align: justify;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  padding-top: 0.5rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.commit-counter,
+.ascii-art {
+  color: #1C1917;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  justify-content: center;
+}
+
+.paragraphs p {
+  font-size: 16px;
+  text-align: justify;
+  color: #1C1917;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  width: 100%;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #1C1917;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

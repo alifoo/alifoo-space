@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alisson Ayres</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="profile.jpeg" alt="Picture of Ali, the owner of the website" class="profile-img" />
+      <div class="profile-text">
+        <h1>Alisson Ayres</h1>
+        <p>Software Engineer</p>
+        <p>Computer Science student at PUC-PR</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div id="commit-counter">Loading commit counter...</div>
+      <div id="ascii-art">Loading ascii art...</div>
+      <script>
+	fetch("seed.txt")
+	  .then(response => response.text())
+	  .then(data => {
+	    document.getElementById("ascii-art").textContent = data;
+	  })
+	  .catch(error => {
+	    console.error("Error loading seed ascii art:", error);
+	  });
+      </script>
+
+    </div>
+
+    <div class="paragraphs">
+      <p>Knowledge can be visualized as a forest, composed of an infinite number of trees. Each tree represents a major category of knowledge. Its branches represent subtopics, and leaves represent specific fields. I visualize skills as fruits that can be obtained from a well-cultivated tree, sustained by a consistent, lifelong learning process.</p>
+      <p>The seed displayed depicts my own tree of Computer Science. The number at the top shows each commit made to my GitHub account starting this year. Once the number is reached, the tree will grow.</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="#">Projects</a>
+      <a href="#">Work experience</a>
+      <a href="#">Fleeting notes</a>
+      <a href="#">Academic related</a>
+      <a href="#">Github</a>
+    </div>
+  </div>
+</body>
+</html>
+
