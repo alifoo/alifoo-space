@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "api/*.js", "use": "@vercel/node" },
-    { "src": "*.js", "use": "@vercel/node" }
-  ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/(.*)", "dest": "/$1" }
+    { "src": "/api/get-commit-count", "dest": "/api/get-commit-count.js" },
+    { "src": "/api/github-webhook", "dest": "/api/github-webhook.js" },
+    { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }
