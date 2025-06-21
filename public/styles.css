@@ -28,10 +28,10 @@ body {
 }
 
 #ascii-art {
-      white-space: pre; /* preserves formatting */
-      font-family: monospace;
-      padding: 1rem;
-    }
+  white-space: pre;
+  font-family: monospace;
+  padding-bottom: 1rem;
+}
 
 .container {
   display: flex;
@@ -88,9 +88,14 @@ body {
   justify-content: center;
 }
 
-.commit-counter,
 .ascii-art {
+  padding: 0rem;
   color: #1C1917;
+}
+
+#commit-counter {
+  color: #1C1917;
+  padding-top: 1rem;
 }
 
 .paragraphs {
