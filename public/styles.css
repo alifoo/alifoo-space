@@ -14,7 +14,7 @@ body {
 
 @font-face {
   font-family: 'ZedMono Nerd Font';
-  src: url('./fonts/ZedMonoNerdFontMono-Bold.ttf') format('truetype');
+  src: url('./fonts/ZedMonoNerdFontMono-Medium.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -47,6 +47,7 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
+  padding-top: 4rem;
 }
 
 .profile-img {
@@ -59,6 +60,10 @@ body {
   width: 26rem;
   padding: 0.5rem;
   border-radius: 0.125rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .profile-text h1 {
@@ -114,6 +119,35 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.goback-part {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  width: 100%;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.goback-part a {
+  text-decoration: none;
+  color: #1C1917;
+}
+
+.goback-part a:hover {
+  text-decoration: underline;
+}
+
+.title-part {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  width: 100%;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-links {
   display: flex;
   gap: 1rem;
@@ -122,6 +156,7 @@ body {
   padding: 0.5rem;
   justify-content: center;
   align-items: center;
+  padding-bottom: 4rem;
 }
 
 .nav-links a {
