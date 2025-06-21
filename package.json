@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alifoo/alifoo-space-vanillajs.git"
+    "url": "git+https://github.com/alifoo/alifoo-space.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/alifoo/alifoo-space-vanillajs/issues"
+    "url": "https://github.com/alifoo/alifoo-space/issues"
   },
-  "homepage": "https://github.com/alifoo/alifoo-space-vanillajs#readme",
+  "homepage": "https://github.com/alifoo/alifoo-space#readme",
   "dependencies": {
     "@supabase/supabase-js": "^2.50.0",
     "dotenv": "^16.5.0",
