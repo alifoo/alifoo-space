@@ -20,29 +20,6 @@ const supabase = createClient(
 	process.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
-app.post("/github-webhook", async (req, res) => {
-	const payload = req.body;
-
-	const commitCount = payload.commits?.length || 0;
-
-	if (commitCount === 0) {
-		console.log("No commits found, exiting.");
-		return res.status(200).send("No commits");
-	}
-
-	const { error } = await supabase.rpc("increment_commit_count", {
-		num: commitCount,
-	});
-
-	if (error) {
-		console.error("Supabase error:", error);
-		return res.status(500).send("Error updating commit count");
-	}
-
-	console.log(`Commit count updated by ${commitCount}`);
-	return res.status(200).send("OK");
-});
-
 app.get("/", (req, res) => {
 	res.send("GitHub webhook listener is running.");
 });
