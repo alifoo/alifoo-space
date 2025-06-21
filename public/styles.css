@@ -1,9 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: #FEECDE;
   font-family: 'ZedMono Nerd Font', monospace;
+  background-color: #FEECDE;
 }
 
 @font-face {
@@ -133,4 +132,32 @@ body {
 
 .nav-links a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-text {
+    width: 100%;
+  }
+
+  .profile-text h1,
+  .profile-text p {
+    text-align: center;
+  }
+
+  .paragraphs p {
+    text-align: left;
+  }
+  
+  #ascii-art {
+    font-size: 0.8rem;
+  }
 }
