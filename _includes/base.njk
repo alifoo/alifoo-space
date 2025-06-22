@@ -38,9 +38,11 @@
 
     {{ content | safe }}
 
+    {% if page.url !== '/' %}
     <div class="goback-part">
       <a href="/">< Home</a>
     </div>
+    {% endif %}
 
     <div class="nav-links">
       <a href="/projects.html">Projects</a>
