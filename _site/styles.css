@@ -32,6 +32,10 @@ body {
   padding-bottom: 1rem;
 }
 
+#myname {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;

@@ -3,10 +3,13 @@ import path from 'path';
 export default function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ "public": "/" });
 
-	eleventyConfig.addNunjucksFilter("readableDate", function(dateObj) {
-		const options = { year: 'numeric', month: 'short', day: 'numeric' };
+	const readableDateFilter = (dateObj) => {
+		const options = { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' };
 		return new Date(dateObj).toLocaleDateString('en-US', options);
-	});
+	};
+
+	eleventyConfig.addNunjucksFilter("readableDate", readableDateFilter);
+	eleventyConfig.addLiquidFilter("readableDate", readableDateFilter);
 
 	return {
 		dir: {
