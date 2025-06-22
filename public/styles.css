@@ -32,6 +32,10 @@ body {
   padding-bottom: 1rem;
 }
 
+#myname {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -141,6 +145,29 @@ body {
   margin-top: 0.4rem;
   margin-bottom: 0.1rem;
 }
+
+.paragraphs-notes-listing {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  justify-content: center;
+}
+
+.paragraphs-notes-listing p {
+  font-size: 16px;
+  text-align: justify;
+  color: #1C1917;
+  margin-top: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.paragraphs-notes-listing h3 {
+  margin-top: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+
+
 
 .goback-part {
   display: flex;

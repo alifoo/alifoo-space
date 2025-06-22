@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>alifoo - forest of knowledge</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <a href="/index.html"><img src="profile.jpeg" alt="Picture of Ali, the owner of the website" class="profile-img" /></a>
+      <div class="profile-text">
+	<a href="/index.html"><h1>Alisson Ayres</h1></a>
+        <p>Software Engineer</p>
+        <p>Computer Science student at PUC-PR</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div id="commit-counter">Loading commit counter...</div>
+      <div id="ascii-art">Loading ascii art...</div>
+      <script>
+	fetch("seed2.txt")
+	  .then(response => response.text())
+	  .then(data => {
+	    document.getElementById("ascii-art").textContent = data;
+	  })
+	  .catch(error => {
+	    console.error("Error loading seed ascii art:", error);
+	  });
+      </script>
+
+    </div>
+
+    <div class="paragraphs">
+      <p>Knowledge can be visualized as a forest, composed of an infinite number of trees. Each tree represents a major category of knowledge. Its branches represent subtopics, and leaves represent specific fields. I visualize skills as fruits that can be obtained from a well-cultivated tree, sustained by a consistent, lifelong learning process.</p>
+	<p>The seed displayed depicts my own tree of <b>Computer Science</b>. The number at the top shows each commit made to my GitHub account starting this year. Once the number is reached, the tree will grow.</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="/projects.html">Projects</a>
+      <a href="/work-experience.html">Work experience</a>
+      <a href="/notes/">Fleeting notes</a>
+      <a href="/about.html">About me</a>
+      <a href="/academic.html">Academic</a>
+      <a href="https://github.com/alifoo" target="_blank" rel="noopener noreferrer">Github</a>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+

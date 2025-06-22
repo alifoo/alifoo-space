@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+{% block head %}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }} | Alisson Ayres</title>
+  
+  {# Add the stylesheet link back in! #}
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="/favicon.ico" />
+{% endblock %}
+
+<div class="paragraphs">
+  <h2>{{ title }}</h2>
+  <p>{{ date | readableDate }}</p>
+  {{ content | safe }}
+</div>
