@@ -1,8 +1,15 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "_site"
+      }
+    }
+  ],
   "routes": [
-    { "src": "/api/get-commit-count", "dest": "/api/get-commit-count.js" },
-    { "src": "/api/github-webhook", "dest": "/api/github-webhook.js" },
-    { "src": "/(.*)", "dest": "/public/$1" }
+    { "src": "/(.*)", "dest": "/_site/$1" }
   ]
 }

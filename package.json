@@ -4,7 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "npx @11ty/eleventy",
+    "dev:eleventy": "npx @11ty/eleventy --serve --quiet"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,8 @@
     "@supabase/supabase-js": "^2.50.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
   }
 }

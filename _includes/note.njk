@@ -1,0 +1,7 @@
+{# _includes/note.njk #}
+---
+layout: base.njk
+---
+<h2>{{ title }}</h2>
+<p>{{ date | readableDate }}</p> {# Eleventy has filters for dates #}
+{{ content | safe }}
