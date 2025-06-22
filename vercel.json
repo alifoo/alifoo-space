@@ -8,8 +8,5 @@
         "distDir": "_site"
       }
     }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/_site/$1" }
   ]
 }
